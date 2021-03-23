@@ -12,8 +12,6 @@ Coming soon ...
  
 ### Bernd Neumayr
 
-![Image](bernd.jpg)
-
 
 ## Welcome to GitHub Pages
 
