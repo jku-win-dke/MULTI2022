@@ -4,6 +4,16 @@ Coming soon ...
 
 [Test PDF](test.pdf)
 
+## Workshop Chairs
+
+### Gergely Mezei
+
+### Victorio Albani Carvalho
+ 
+### Bernd Neumayr
+
+![Image](bernd.jpg)
+
 
 ## Welcome to GitHub Pages
 
