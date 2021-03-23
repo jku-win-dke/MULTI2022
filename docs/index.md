@@ -2,6 +2,8 @@
 
 Coming soon ...
 
+[Test PDF](test.pdf)
+
 
 ## Welcome to GitHub Pages
 
