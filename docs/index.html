@@ -14,7 +14,29 @@ body {
 div.all {
   max-width: 50em; 
   margin: auto;
+}
+
+div.header
+{
+	width: 100%;	
+	text-align: center;
+	 position: relative;
 } 
+
+.headText {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+}
+
+img.headimg {
+  width: 100%;
+  max-width: 1000px; 
+  height: auto;
+}
  
 h1 {
   text-align: center;
@@ -99,10 +121,16 @@ img.person {
         </div>
      </div>
   
+  <div class="header">
+	<img class="headimg" src="img/header.jpg"/>
+	<div class="headText"><b>MULTI 2021</b><br>The 8th International Workshop on Multi-Level Modelling<br> at MODELS 2021 </div>
+  </div>
   
+  <!--
   <h1>MULTI 2021</h1>
   <p class="subtitle">The 8th International Workshop on Multi-Level Modelling at MODELS 2021 </p>
   <p class="subtitle">(fully virtual)</p>
+  -->
   
   <p>The yearly MULTI workshop is the premier event for researchers and practitioners working on multilevel modeling and multilevel software development. </p>
   
@@ -206,7 +234,8 @@ img.person {
     <li> Victorio Albani Carvalho, Federal Institute of Espírito Santo (IFES), Brazil
     <img src="img/victorio.jpeg" alt="Victorio" class="person"/>
     </li>
-    <li> Gergely Mezei - Budapest University of Technology and Economics, Hungary</li>
+    <li> Gergely Mezei - Budapest University of Technology and Economics, Hungary
+	<img src="img/gergely_mezei.jpg" alt="Gergely" class="person"/></li>
 
     
 
