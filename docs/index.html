@@ -52,11 +52,54 @@ img.person {
   border: thick solid beige;
 }
 
+.container__wrapper {
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    /* Absolute position */
+    left: 0px;
+    position: absolute;
+    top: 0px;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+}
+
+.container__watermark {
+    /* Text color */
+    color: rgba(0, 0, 0, 0.1);
+
+    /* Text styles */
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    /* Rotate the text */
+    transform: rotate(-45deg);
+
+    /* Disable the selection */
+    user-select: none;
+}
+
+
+
     </style>
     
   </head>
   <body id="top">
   <div class=all>
+  
+      <div class="container__wrapper">
+        <!-- The watermark -->
+        <div class="container__watermark">
+            Draft
+        </div>
+     </div>
+  
+  
   <h1>MULTI 2021</h1>
   <p class="subtitle">The 8th International Workshop on Multi-Level Modelling at MODELS 2021 </p>
   <p class="subtitle">(fully virtual)</p>
