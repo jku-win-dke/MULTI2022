@@ -4,8 +4,238 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MULTI 2021</title>
+
+    <style>
+
+body {
+  font-family: sans-serif;  
+}
+ 
+div.all {
+  max-width: 50em; 
+  margin: auto;
+} 
+ 
+h1 {
+  text-align: center;
+} 
+ 
+h2 { 
+  background-color: beige;
+}
+
+p.subtitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0em;
+  padding: 0em;
+  border: 0em;
+}
+
+p.nav {
+  font-size: 1em;
+  text-align: right;
+  margin-top: -0.5em;  
+}
+
+img.impression {
+  width: 100%;
+  max-width: 1000px; 
+  height: auto;
+}
+
+img.person {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  border: thick solid beige;
+}
+
+    </style>
+    
   </head>
-  <body>
-    coming soon ...
-  </body>
+  <body id="top">
+  <div class=all>
+  <h1>MULTI 2021</h1>
+  <p class="subtitle">The 8th International Workshop on Multi-Level Modelling at MODELS 2021 </p>
+  <p class="subtitle">(fully virtual)</p>
+  
+  <p>The yearly MULTI workshop is the premier event for researchers and practitioners working on multilevel modeling and multilevel software development. </p>
+  
+
+  <p>Together with the Models Conference, MULTI 2021 will be held entirely online and will accommodate remote participation and presentation. All accepted papers presented online will be published by IEEE.</p>
+   
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#call">Call for Papers</a></li>
+<li><a href="#challenge">Collaborative Comparison Challenge</a></li>
+<li><a href="#dates">Important dates</a></li>
+<li><a href="#committees">Committees</a></li>
+<li><a href="#program">Program</a></li>
+<li><a href="#impressions">Impressions from MULTI2020</a></li>
+</nav>
+ 
+  
+  
+<h2 id="about">About the MULTI workshop series</h2>
+
+  <p class='nav'><a href="#top">top</a></p>
+  
+   <p>Multilevel language architectures represent a new object-oriented paradigm both for conceptual modeling and software engineering. Different from traditional approaches, they allow for an arbitrary number of classification levels and introduce other concepts that foster reuse and adaptability. While multilevel languages and tools have reached a considerable maturity, the field still offers numerous challenges. The MULTI workshop series is dedicated to bring together experts who develop and apply multilevel language technologies as well as those who focus on specific analysis and design methods or on economic aspects of this new paradigm.</p>
+  
+  <p>Multilevel modelling is an emerging new modelling paradigm that offers exciting new perspectives not only for conceptual modelling, but also for the development of software systems that are integrated with models of themselves. Multilevel DSMLs allow for combining the benefits of economies of scale with the productivity enabled by concepts that were designed for very specific domains. Multilevel modelling has now been used successfully in a wide range of projects.</p>
+  
+  <p>It is aimed at providing a platform for exchanging ideas and promoting the further development of multilevel languages, methods and tools. In particular, the goal is to encourage the community to delineate different approaches to multilevel modelling and define objective ways to evaluate their respective strengths/weaknesses.</p>
+  
+  
+  
+<h2 id="call">Call for Papers</h2>
+   <p class='nav'><a href="#top">top</a></p>
+   
+  <p> Three kinds of papers are solicited: regular papers (10 pages), challenge papers (10 pages), and position papers (5 pages).</p>
+
+  <p>Topics for regular and position papers include, but are not limited to:</p> 
+
+  <ul>
+    <li>the nature of elements in a multi-level hierarchy and how best to represent them,</li>
+    <li> the importance and role of deep characterization mechanisms, including potency and its variants,</li>
+    <li> the structure and labelling of a MLM framework,</li>
+    <li> methods and techniques for discovering clabjects, specializations and classification relationships,</li>
+    <li> formal approaches to MLM,</li>
+    <li> fundamental aspects of MLM such as composition and decomposition, </li>
+    <li> experiences and challenges in providing tool support for MLM,</li>
+    <li> experiences and challenges in applying MLM to large and/or real-world problems,</li>
+    <li> model management languages (transformation, code generation etc.) in a multi-level setting,</li>
+    <li> criteria and approaches for comparing MLM approaches,</li>
+    <li> integration of modelling and programming languages in a multi-level setting,</li>
+    <li> definition of behavioral semantics in a multilevel setting, </li>
+    <li> design patterns addressing when and how to apply multi-level metamodelling,</li>
+    <li> case studies illustrating the usage of multi-level techniques to overcome difficulties occurring in classic modelling scenarios.</li>
+    <li> multi-level modeling of AI systems (knowledge graphs, machine learning, reasoning)</li> 
+  </ul>
+
+  <p>Authors submit their papers as PDF files via Easychair. The challenge description will be made available on the workshop website. Challenge papers must  be  subtitled “A contribution to  the  MULTI Collaborative Comparison Challenge”. Accepted papers will be included in the joint workshop proceedings published by the IEEE. </p>
+
+
+<h2 id="challenge">Collaborative Comparison Challenge</h2>
+  <p class='nav'><a href="#top">top</a></p>
+  
+  <p>Multi-level modeling addresses the representation of subject domains dealing explicitly with multiple levels of instantiation, such as software development, process modeling, organizational roles, biological taxonomy, artifact types and so on.  In the last decades, many approaches for multi-level modeling have been proposed, with different purposes and founded on different concepts. These approaches, have in common the goal of extending the traditional two-level approaches with constructs and concepts to deal with multiple levels of instantiation in a natural way, increasing the expressivity and reducing the complexity and ambiguity of the generated models. </p>
+
+  <p>Despite the advances in multi-level modeling approaches and tools, there is still no consensus on what kinds of constructs and concepts provide the best support for it. The differences between the approaches exist not only at the implementation level, but even at theoretical foundations and principles. Researchers tend to use even the basic concepts such as specialization or instantiation in different ways, since multi-level behavior adds new perspectives to well-known modeling concepts. This lack of a common understanding on multi-level modeling principles makes it difficult to compare and interoperate models constructed following different approaches, and is an obstacle to the advance of multi-level modeling.</p>
+
+  <p>The intention of this <b>Collaborative Comparison Challenge</b> is to move towards unifying multi-level modeling by encouraging researchers of the community to collaborate with each other. Previous challenges (+ref Bicycle challenge, +ref Process challenge) asked researchers to illustrate the mechanisms of their approaches by solving a set of requirements in a given domain. The challenges were essential first steps in comparing and evaluating the different concepts, but in the context of unification they have their limits as each researcher focused on its own approach. This is the reason why the <b>Collaborative Comparison Challenge</b> follows another philosophy: the challenge is that researchers working on different multi-level modeling approaches collaborate with each other and write a joint paper comparing the philosophy of the approaches based on a domain example. Although the domain examples can be chosen arbitrarily, we encourage researchers to use one of the previous challenges, in order to have a common ground between the submitted papers. Papers should explain at least some basic concepts commonly found in multi-level modeling including, but not limited to, instantiation, abstraction levels, specialization, deep characterization, cross-level relationships and constraints, custom constraints on the structure or behavior, multi-level attributes and operations, relations (e.g. containment or association) between modeling entities. The papers should focus on showcasing the differences and commonalities between the approaches foundational concepts rather than in the implementation details. Researchers are also encouraged to formally define the foundational concepts underlying their approaches and identify open questions wherever it is possible. </p>
+
+  
+
+
+<h2 id="dates">Important dates (tentative)</h2>
+  <p class='nav'><a href="#top">top</a></p>
+  
+  <ul>
+    <li> Paper Submission:	22nd July 2021</li>
+    <li>  Authors Notification: 	21st August 2021</li>
+    <li> Camera-ready Papers:	28th August 2021</li>
+    <li> Workshop:	10th-12th October 2021</li>
+  </ul>  
+    
+
+    
+    
+<h2 id="committees">Committees</h2>    
+  <p class='nav'><a href="#top">top</a></p> 
+ 
+<h3>Steering Committee</h2>   
+ 
+  <ul>
+    <li> Colin Atkinson (University of Mannheim, Germany)
+    <li> Thomas Kühne (Victoria University of Wellington, New Zealand)
+    <li> Juan de Lara (Universidad Autónoma de Madrid, Spain)
+  </ul>
+ 
+ 
+ 
+<h3>Workshop Organizers</h3>
+
+  <ul>
+    <li> Victorio Albani Carvalho, Federal Institute of Espírito Santo (IFES), Brazil</li>
+    <li> Gergely Mezei - Budapest University of Technology and Economics, Hungary</li>
+
+    
+
+    <li>Bernd Neumayr, Johannes Kepler University Linz, Austria
+    
+    <img src="img/bernd.jpg" alt="Bernd" class="person"/>
+    </li>
+  </ul>
+
+  
+  
+<h3>Program Committee</h3>
+
+  <ul>
+    <li>tba</li>
+  </ul>
+
+
+
+<h2 id="program">Program (exemplary)</h2>
+  <p class='nav'><a href="#top">top</a></p>
+  
+  <ul>
+    <li>Welcome and Keynote
+    
+      <ul>
+        <li>Welcome by organizers</li>
+        <li>Keynote</li>
+      </ul>
+    
+    </li>
+    
+    <li>Coffee Break</li>
+
+    <li>
+      Paper Session  
+      <ul>
+        <li>Regular Paper 1 </li>
+        <li>Regular Paper 2</li>
+        <li>Regular Paper 3</li>
+        <li>Regular Paper 4</li>
+      </ul>
+    </li>
+
+    <li>Lunch</li>
+
+    <li>
+      Challenge Session
+      <ul>
+        <li>Challenge Paper 1 </li>
+        <li>Challenge Paper 2</li>
+        <li>Plenary Discussion</li>
+      </ul>
+    </li>
+    
+    <li>Coffee Break</li>
+
+    <li>
+      Plenary Session
+      <ul>
+        <li>Position Paper 1 </li>
+        <li>Position Paper 2 </li>
+        <li>Plenary Discussion</li>
+      </ul>
+    </li>
+  </ul>
+
+  
+  
+<h2 id="impressions">Impressions from MULTI 2020</h2>
+  <p class='nav'><a href="#top">top</a></p>
+  
+<img src="img/multi2020.jpg" alt="Screenshot from MULTI 2020" class="impression"/>
+  
+</div>
+</body>
 </html>
