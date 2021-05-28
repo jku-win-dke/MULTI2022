@@ -6,11 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MULTI 2021</title>
 		
-        <script type="application/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script type="application/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	 
-
+	<script>
+	$(document).ready(function() {		
+            var current = window.location.href;
+			$('#nav li a').each(function(){	
+				var $this = $(this);
+				if(current.indexOf($this.attr('href')) !== -1){
+					$this.tab('show');				
+			}		
+		})
+	});
+	</script>
     <style> 
 	body{
 		color: black;
@@ -65,8 +75,7 @@
 }
 
 .col-sm-4 img {
-  max-width: 200px;
-  height: auto;
+  height: 250px;
   border: thick solid beige;
   text-align: left;
   padding: 0px;
@@ -102,7 +111,7 @@ img.impression {
   </div>
   </div> 
   <div class="container-fluid">  
-  <ul class="nav nav-tabs">
+  <ul class="nav nav-tabs" id="nav">
    <li class="nav-item">
     <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
   </li>  
@@ -179,27 +188,22 @@ img.impression {
   
   
   <div class="tab-pane fade" id="challenge">
-  <p>
-  Multi-level modelling addresses the representation of subject domains dealing explicitly with multiple levels of instantiation, such as software development, process modelling, organizational roles, biological taxonomy, artifact types and so on.  
-  In the last decades, many approaches for multi-level modelling have been proposed, with different purposes and founded on different concepts. 
-  These approaches, have in common the goal of extending the traditional two-level approaches with constructs and concepts to deal with multiple levels of instantiation in a natural way, increasing the expressivity and reducing the complexity and ambiguity of models. </p>
-
-  <p>
-  Despite the advances in multi-level modelling approaches and tools, there is still no consensus on what kinds of constructs and concepts provide the best support for multi-level modelling. 
-  The differences between the approaches exist not only at the implementation level, but even at the level of theoretical foundations and principles. 
-  Researchers tend to use even basic concepts such as specialization or instantiation in different ways, since multi-level behavior adds new perspectives to well-known modelling concepts.
-  This lack of a common understanding on multi-level modelling principles makes it difficult to compare and interoperate models constructed using different approaches, and is an obstacle to the advancement of multi-level modelling.
-  </p>
-
-  <p>The intention of this <b>Collaborative Comparison Challenge</b> is to move towards homogenising multi-level modelling by encouraging researchers of the community to collaborate with each other.
-  Previous challenges (<a href="https://www.wi-inf.uni-duisburg-essen.de/MULTI2018/wp-content/uploads/2018/03/MULTI2018-BicycleChallenge.pdf">Bicycle challenge</a>, <a href="https://www.wi-inf.uni-duisburg-essen.de/MULTI2019/wp-content/uploads/2019/05/MULTI_Process_Modeling_Challenge.pdf">Process challenge</a>) asked researchers to illustrate the mechanisms of their approaches by addressing a set of requirements in a given domain. 
-  The challenges were essential first steps in comparing and evaluating the different concepts, but since they focused on a single technology and allowed individual interpretations of the domain, they had limited utility for supporting technology comparisons. 
-  For this reason, the Collaborative Comparison Challenge uses a different design: the challenge comprises researchers working on different multi-level modelling approaches collaborate with each other and write a joint paper comparing the philosophy of the approaches based on a common domain example available <a href="Challenge2021.pdf">here</a>. 
-  Papers should discuss at least some basic concepts commonly found in multi-level modelling including, but not limited to, instantiation, abstraction levels, specialization, deep characterization, cross-level relationships and constraints, custom constraints on the structure or behavior, multi-level attributes and operations, relations (e.g. containment or association) between modelling entities. 
-  The papers should focus on showcasing the differences and commonalities between the approaches' foundational concepts rather than between implementation details. 
-  Researchers are also encouraged to formally define the foundational concepts underlying their approaches and identify open questions wherever possible. </p>
   
-  <p><a href="Challenge2021.pdf">Download</a> detailed challenge description including  domain example.</p>  
+  <p>Multi-level modeling addresses the modeling of subject domains that benefit from an explicit recognition of multiple levels of domain representation, such as software development, process modeling, capturing organizational roles, biological taxonomies, product hierarchies, and so on. Over the span of two decades many approaches for multi-level modeling have been proposed, all sharing the goal of extending traditional two-level approaches with constructs and concepts that naturally support multiple levels of domain representation, with the goal to increase model expressiveness while  simultaneously reducing model complexity.</p>
+
+<p>Numerous advances in multi-level modeling approaches and tools have, however, lead to a proliferation of available approaches, thus displaying a lack of consensus on what kinds of constructs and concepts provide the best support for multi-level modeling. In part, differences are owed to different application targets or different prioritizations of desirable model properties, yet not all existing differences can necessarily be motivated in this manner. Some differences at both foundational and realization levels may be perfectly justifiable while others may be reconcilable without diminishing effects.</p>
+
+<p>The <b>Collaborative Comparison Challenge</b> aims towards increasing communication  between multi-level modeling researchers by encouraging collaborations which may justify and thus clarify the need for existing differences, or, alternatively, lead towards homogenizing multi-level modeling.
+
+Previous challenges (the <a href="https://www.wi-inf.uni-duisburg-essen.de/MULTI2018/wp-content/uploads/2018/03/MULTI2018-BicycleChallenge.pdf">2017 Bicycle Challenge</a> and the <a href="https://www.wi-inf.uni-duisburg-essen.de/MULTI2019/wp-content/uploads/2019/05/MULTI_Process_Modeling_Challenge.pdf">2019 Process Challenge</a>) already invited researchers to demonstrate their approaches by addressing a set of requirements in a given domain and thus represented essential first steps towards the benchmarking of various approaches. </p>
+
+<p>However, since these challenges only focused on a single approach respectively and did not specifically encourage the contrasting of approaches beyond regular related work discussions, their value in contrasting approaches and fostering a dialogue between researchers was limited. For this reason, the <b>Collaborative Comparison Challenge</b> specifically requires the application of two or more approaches to one <a href="MULTI2021_Challenge.pdf">domain example</a> and mandates the discussion of commonalities and differences between the approaches in a joint paper authored by proponents of different multi-level modeling approaches.
+
+Commonalities and differences should be discussed as they manifest themselves in the treatment of the domain example but also at a more general level. Respective discussion subjects which authors may choose to elaborate on include, but are not limited to, fundamental concepts such as the nature of levels, cross-level relationships, classification vs generalization, deep characterization, the treatment of attributes and operations, and the use of structural and behavioral constraints.
+
+Discussions should seek to explore justifications for, and/or potential reconciliations of, fundamental differences rather than surface-level realization choices. An optional avenue towards contributing to the clarification of differences is the formalization of foundational concepts, thereby possibly discovering open questions and/or potential for unification.</p>
+
+<p>All submission requirements and the domain example to use are available from the <a href="Challenge2021.pdf">detailed MULTI 2021 challenge description</a>.</p>
   </div>
   
   <div class="tab-pane fade" id="dates">
@@ -270,7 +274,6 @@ img.impression {
   </div>
   
    <div class="tab-pane fade" id="previous">
-   <img src="img/multi2020.jpg" alt="Screenshot from MULTI 2020" class="impression">
   </div>
   </div>
   
